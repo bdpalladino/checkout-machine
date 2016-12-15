@@ -2,10 +2,9 @@ require 'minitest/autorun'
 require_relative '../checkout_machine'
 require_relative '../item'
 
-# Item unit tests
 class ItemTest < Minitest::Test
   def setup
-    @item = Item.new(123, 200) # chips
+    @item = Item.new({:sku => 123, :price => 200 }) # chips
   end
 
   def test_order_returns_chip_sku

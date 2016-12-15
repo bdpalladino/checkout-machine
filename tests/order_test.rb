@@ -6,9 +6,9 @@ require_relative '../order'
 class OrderTest < Minitest::Test
   def setup
     @order = Order.new
-    @chips = Item.new(123, 200)
-    @salsa = Item.new(456, 100)
-    @bonus_card = Item.new(000, 0)
+    @chips = Item.new({:sku => 123, :price => 200 })
+    @salsa = Item.new({:sku => 456, :price => 100 })
+    @bonus_card = Item.new({:sku => 000, :price => 0 })
   end
 
   def test_order_add_scanned_item_updates_order

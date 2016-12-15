@@ -2,8 +2,8 @@
 class Item
   attr_accessor :sku, :price
   
-	def initialize(sku, price=0)
-    @sku = sku
-    @price = price
+	def initialize(args)
+    @sku = args[:sku]
+    @price = args[:price]
   end
 end
