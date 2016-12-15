@@ -4,6 +4,6 @@ class Item
   
 	def initialize(args)
     @sku = args[:sku]
-    @price = args[:price]
+    @price = args[:price] || 0
   end
 end
