@@ -7,6 +7,7 @@ class Order
     @bonus_card_scanned = false
     @salsa_counter = 0
     @chip_counter = 0
+    @discounter = Discounter.new
   end
 
   def add_scanned_item(item)
@@ -30,8 +31,8 @@ class Order
 
   def apply_discount
     if @bonus_card_scanned
-      @balance -= 50 * @salsa_counter
-      @balance -= 200 * (@chip_counter/3).floor
+      @balance -= @discounter.calculate_discount(sku: 123, quantity: @chip_counter)
+      @balance -= @discounter.calculate_discount(sku: 456, quantity: @salsa_counter)
     end
   end
 end
