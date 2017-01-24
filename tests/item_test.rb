@@ -4,7 +4,7 @@ require_relative '../item'
 
 class ItemTest < Minitest::Test
   def setup
-    @item = Item.new(123, 200) # chips
+    @item = Item.new({:sku => 123, :price => 200 }) # chips
   end
 
   def test_order_returns_chip_sku
