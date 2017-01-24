@@ -10,7 +10,7 @@ The original checkout machine code has been saved in the branch 'original-checko
 Summary of changes:
 * Chapter 2 (Designing Classes with a Single Responsibility): Created an Item class to hold item related data and future functionality and an Order class to hold order specific data and functionality.
 * Chapter 3 (Managing Dependencies): Updated Item to take variable args.
-* Chapter 4 (Creating Flexible Interfaces):  
+* Chapter 4 (Creating Flexible Interfaces): Added Discounter class to remove discount logic from Order class.
 
 
 ## Problem  
