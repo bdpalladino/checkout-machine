@@ -5,9 +5,10 @@ A toy example checkout machine for certified scrum developer (CSD)
 
 Changes made chapter by chapter based on practices recommended in 'Practical Object-Oriented Design in Ruby' by Sandi Metz
 
-The original checkout machine code has been saved in the branch 'original-checkout-machine'. Each subsequent chapter had revsions saved in branch ch# (ch2 for Chapter 2, ch3 for Chapter 3 etc). These branches have been merged to master so that the contents of the master branch are current with our progress in the book.
+The original checkout machine code has been saved in the branch 'ch1'. Each subsequent chapter had revsions saved in branch ch# (ch2 for Chapter 2, ch3 for Chapter 3 etc). These branches have been merged to master so that the contents of the master branch are current with our progress in the book.
 
 Summary of changes:
+* Chapter 1 (Object Oriented Design): Original code before refactoring
 * Chapter 2 (Designing Classes with a Single Responsibility): Created an Item class to hold item related data and future functionality and an Order class to hold order specific data and functionality.
 * Chapter 3 (Managing Dependencies): Updated Item to take variable args.
 * Chapter 4 (Creating Flexible Interfaces): Added Discounter class to remove discount logic from Order class.
