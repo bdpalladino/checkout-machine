@@ -2,7 +2,7 @@
 class OrderItem < Item
   attr_accessor :count
 
-  # The wrong way to add to super class constructor logic (p132-134):
+  # The wrong way to extend super class constructor logic (p132-134):
   # def initialize(args)
   # 	super(args) # note: 
   #   @count = 0
@@ -20,7 +20,7 @@ class OrderItem < Item
     end
   end
 
-  # The right way to add to super class constructor logic (p134-135):
+  # The right way to extend super class constructor logic (p134-135):
   # override method from the super that is called in super constructor
   def post_initialize
     @count = 0

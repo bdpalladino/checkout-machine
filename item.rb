@@ -1,5 +1,8 @@
+require './taxable'
+
 # Data and behaviors related to items sold in the store
 class Item
+  include Taxable
   attr_accessor :sku, :price
   
 	def initialize(args)

@@ -14,6 +14,7 @@ Summary of changes:
 * Chapter 4 (Creating Flexible Interfaces): Added Discounter class to remove discount logic from Order class.
 * Chapter 5 (Reducing Costs with Duck Typing): We're already duck typing here. :)
 * Chapter 6 (Acquiring Behavior Through Inheritance): Added OrderItem class to extend Item super class
+* Chapter 7 (Sharing Role Behavior with Modules): Added taxable module
 
 ## Problem  
 
