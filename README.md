@@ -13,7 +13,7 @@ Summary of changes:
 * Chapter 3 (Managing Dependencies): Updated Item to take variable args.
 * Chapter 4 (Creating Flexible Interfaces): Added Discounter class to remove discount logic from Order class.
 * Chapter 5 (Reducing Costs with Duck Typing): We're already duck typing here. :)
-
+* Chapter 6 (Acquiring Behavior Through Inheritance): Added OrderItem class to extend Item super class
 
 ## Problem  
 
