@@ -15,6 +15,7 @@ Summary of changes:
 * Chapter 5 (Reducing Costs with Duck Typing): We're already duck typing here. :)
 * Chapter 6 (Acquiring Behavior Through Inheritance): Added OrderItem class to extend Item super class
 * Chapter 7 (Sharing Role Behavior with Modules): Added taxable module
+* Chapter 8 (Combining Objects with Composition): Refactored Order class to add OrderItem hash
 
 ## Problem  
 
@@ -71,3 +72,8 @@ Finished in 0.001012s, 9884.4314 runs/s, 9884.4314 assertions/s.
 
 10 runs, 10 assertions, 0 failures, 0 errors, 0 skips
 ``` 
+
+To load contents of project for testing in irb:
+```
+Dir['./*.rb'].each {|file| require file}
+```
